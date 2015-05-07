@@ -7,4 +7,4 @@ I had originally tossed together a couple of styles for my MyFitnessPal group. S
 
 **Chrome**: [Install Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
 **Firefox**: [Install Greasemonkey](https://addons.mozilla.org/en-Us/firefox/addon/greasemonkey/)
-Go to script at: (coming soon)
+Go to script: https://github.com/ShaunaGordon/mfp-calorie-remover/raw/master/mfpcalremover.user.js and click the install button
