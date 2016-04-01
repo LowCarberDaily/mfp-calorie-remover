@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         MyFitnessPal Calorie Display Remover
 // @namespace    gordondev
-// @version      0.2
+// @version      0.3
 // @description  For us weirdos on MyFitnessPal that don't want to focus so much on the calories. This script removes all calorie displays from the diary.
 // @author       Shauna Gordon
-// @match        http://www.myfitnesspal.com/food/diary/*
-// @match        https://www.myfitnesspal.com/food/diary/*
+// @match        http://www.myfitnesspal.com/food/diary
+// @match        https://www.myfitnesspal.com/food/diary
 // @grant        none
 // ==/UserScript==
 
@@ -25,10 +25,10 @@ function main() {
 	if(typeof $ == 'undefined') {
 		addJquery();
 	}
-	
+
 	var user = getUser();
 	var url = window.location.pathname.toLowerCase();
-	if(url.indexOf(user) > -1) {
+	if(url.indexOf('diary') > -1 && url.indexOf(user) == -1) {
 		$('.first + td').hide();
 	}
 }
